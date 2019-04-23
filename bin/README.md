@@ -1,4 +1,4 @@
-#IRIS MQTT Adapter Binaries
+# IRIS MQTT Adapter Binaries
 
 Use this files if you don't want to compile IRIS-MQTT-Client.jar yourself.
 
