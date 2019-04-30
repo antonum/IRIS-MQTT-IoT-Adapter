@@ -1,7 +1,7 @@
 /* The following code would connect to WiFi and MQTT brocker
- * then every second it would send the message to the selected MQTT topic
- * <payload><sensorValue>1</sensorValue><sensorID>80:7D:3A:7F:3A:D5</sensorID></payload>
- * sensor value is read from D1 pin. Tested with Infrared Obstacle Avoidance Sensor EK1254
+ * then would send the message to the selected MQTT topic
+ * <payload><sensorValue>1</sensorValue><sensorID>80:7D:3A:7F:3A:D5</sensorID></payload> 
+ *
  * antonum 2019
  */
 #include <Arduino.h>
