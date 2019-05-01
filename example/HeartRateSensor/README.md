@@ -6,3 +6,6 @@
 | GND | GND | 
 | D1 	| SCL | 
 | D2 	| SDA
+
+
+![alt text](hardware.png "hardware")
