@@ -2,6 +2,14 @@
  * then would send the message to the selected MQTT topic
  * <payload><sensorValue>1</sensorValue><sensorID>80:7D:3A:7F:3A:D5</sensorID></payload> 
  *
+ *
+ *|  ESP8266 | 	MAX30100 | 
+ *| -------- |:---------:|
+ *| 3.3v     | VCC       | 
+ *| GND      | GND       | 
+ *| D1	     | SCL       | 
+ *| D2 	     | SDA       |
+ 
  * antonum 2019
  */
 #include <Arduino.h>
