@@ -29,8 +29,6 @@ const char* password = "YOUR_PASSWORD";
 const char* mqtt_server = "MQTT_BROCKER_IP";
 const char* mqtt_topic = "iris/in";
 int ledPin = LED_BUILTIN; 
-//int sensorPin=5; //D1
-//GND and VIN (not 3.3v!!!) as power for the sensor.
 
 //readings should be within no more than 3 seconds from each other
 #define REPORTING_PERIOD_MS     3000
@@ -100,7 +98,7 @@ void loop() {
 
     // Asynchronously dump heart rate and oxidation levels to the serial
     // For both, a value of 0 means "invalid"
-    if (millis() - tsLastReport > REPORTING_PERIOD_MS) {
+    //if (millis() - tsLastReport > REPORTING_PERIOD_MS) {
         //Serial.print("Heart rate:");
         //Serial.print(pox.getHeartRate());
         //Serial.print("bpm / SpO2:");
@@ -108,7 +106,7 @@ void loop() {
         //Serial.println("%");
 
         
-    }
+    //}
 
 }
 // This function initialize Pulse Oximeter
