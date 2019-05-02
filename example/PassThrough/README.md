@@ -2,11 +2,21 @@
 
 ### Installation
 
-1) Create default credentials for Java Business Host with _SYSTEM credentials
+- Create default credentials for Java Business Host with _SYSTEM credentials. (Interoperability->Configure->Credentials)
 
-2) Load IRIS-MQTT-Client.jar file (Interoperability->Build->Java Business Host)
+- Create new Production
 
-4) Load all the xml files into IRIS namespace. 
+- Add Java Gateway Initiator business service
+
+- Add org.eclipse.paho.client.mqttv3-1.2.0.jar to the Classpath parameter of Java Gateway Initiator
+
+- Build Java Business host Business Service and Business Operation (Interoperability->Build->Java Business Host) from IRIS-MQTT-Client.jar file. Use previosly created credentials and XML as "Format of Incoming Data". Everything else - default. 
+
+- Load all the xml files from the repo into IRIS namespace.
+
+- Load XML schemas mqtt_schema.xml and mqtt_schema_plaintext.xml as XML VDoc schemas (Interoperability -> Interoperate -> XML -> XML Schema Structures)
+
+- For MQTTOut Operation you might need to adjust LogFile in Addidtional Settings. File should exist and IRIS should have write access to it. (Might need to touch and chmod). To be addressed by https://github.com/antonum/IRIS-MQTT-IoT-Adapter/issues/1#issue-436244831
 
 ### Configuration
 
